@@ -1,24 +1,9 @@
-# README
+# Patrol
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails app to track when new devices join your network and send an email notification.
 
-Things you may want to cover:
+Parses the XML output from Nmap and saves the entries to a local database.  Intended to run on a Raspberry Pi to monitor the local network and alert when new devices are detected.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+To install:
 
 * ...
