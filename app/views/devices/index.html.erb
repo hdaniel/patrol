@@ -1,0 +1,48 @@
+<%- model_class = Device -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:mac_address) %></th>
+      <th><%= model_class.human_attribute_name(:ip_address) %></th>
+      <th><%= model_class.human_attribute_name(:vendor) %></th>
+      <th><%= model_class.human_attribute_name(:hostname) %></th>
+      <th><%= model_class.human_attribute_name(:notes) %></th>
+      <th><%= model_class.human_attribute_name(:last_seen_at) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @devices.each do |device| %>
+      <tr>
+        <td><%= link_to device.id, device_path(device) %></td>
+        <td><%= device.mac_address %></td>
+        <td><%= device.ip_address %></td>
+        <td><%= device.vendor %></td>
+        <td><%= device.hostname %></td>
+        <td><%= device.notes %></td>
+        <td><%=l device.last_seen_at.in_time_zone %></td>
+        <td><%=l device.created_at.in_time_zone %></td>
+        <td>
+          <%= link_to t('.show', :default => t("helpers.links.show")),
+                      device_path(device), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_device_path(device), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      device_path(device),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_device_path,
+            :class => 'btn btn-primary' %>

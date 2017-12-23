@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mac_address: MyString
+  ip_address: MyString
+  vendor: MyString
+  hostname: MyString
+  notes: MyString
+  last_seen_at: 2017-12-04 20:05:39
+
+two:
+  mac_address: MyString
+  ip_address: MyString
+  vendor: MyString
+  hostname: MyString
+  notes: MyString
+  last_seen_at: 2017-12-04 20:05:39

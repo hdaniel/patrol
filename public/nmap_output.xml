@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Fri Dec 22 16:29:21 2017 as: nmap -oX public/nmap_output.xml -sP 192.168.2.* -->
+<nmaprun scanner="nmap" args="nmap -oX public/nmap_output.xml -sP 192.168.2.*" start="1513981761" startstr="Fri Dec 22 16:29:21 2017" version="7.60" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.1" addrtype="ipv4"/>
+<address addr="F4:F5:E8:88:46:A2" addrtype="mac" vendor="Google"/>
+<hostnames>
+</hostnames>
+<times srtt="120571" rttvar="149609" to="719007"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.104" addrtype="ipv4"/>
+<address addr="28:6A:BA:A2:C3:5B" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="iPad" type="PTR"/>
+</hostnames>
+<times srtt="65448" rttvar="65448" to="327240"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.105" addrtype="ipv4"/>
+<address addr="DC:A9:04:8C:D1:97" addrtype="mac" vendor="Apple"/>
+<hostnames>
+</hostnames>
+<times srtt="94339" rttvar="94339" to="471695"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.107" addrtype="ipv4"/>
+<address addr="6C:C2:17:5C:BD:27" addrtype="mac" vendor="Hewlett Packard"/>
+<hostnames>
+<hostname name="HP5CBD27" type="PTR"/>
+</hostnames>
+<times srtt="86886" rttvar="86886" to="434430"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.111" addrtype="ipv4"/>
+<address addr="04:5D:4B:01:4F:0A" addrtype="mac" vendor="Sony"/>
+<hostnames>
+<hostname name="android-48f80d838c32787c" type="PTR"/>
+</hostnames>
+<times srtt="4808" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.112" addrtype="ipv4"/>
+<address addr="98:01:A7:6A:E6:CE" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="DonnaTiannsiPad" type="PTR"/>
+</hostnames>
+<times srtt="139463" rttvar="139463" to="697315"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.115" addrtype="ipv4"/>
+<address addr="24:A2:E1:EA:46:41" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="sundotbellow" type="PTR"/>
+</hostnames>
+<times srtt="5043" rttvar="5043" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.131" addrtype="ipv4"/>
+<address addr="A0:CE:C8:12:FB:83" addrtype="mac" vendor="CE Link Limited"/>
+<hostnames>
+<hostname name="AUS7HaroldDan2" type="PTR"/>
+</hostnames>
+<times srtt="4973" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.134" addrtype="ipv4"/>
+<address addr="00:A0:DE:F9:E7:5C" addrtype="mac" vendor="Yamaha"/>
+<hostnames>
+</hostnames>
+<times srtt="6056" rttvar="6056" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.135" addrtype="ipv4"/>
+<address addr="F4:F5:E8:92:3A:AA" addrtype="mac" vendor="Google"/>
+<hostnames>
+<hostname name="GFPB100" type="PTR"/>
+</hostnames>
+<times srtt="6058" rttvar="6058" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.137" addrtype="ipv4"/>
+<address addr="44:D8:84:6A:B0:46" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="sundotbellow-express" type="PTR"/>
+</hostnames>
+<times srtt="20199" rttvar="20199" to="100995"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.140" addrtype="ipv4"/>
+<address addr="00:1B:63:F1:98:E6" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="sundotbellowby" type="PTR"/>
+</hostnames>
+<times srtt="2850" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.143" addrtype="ipv4"/>
+<address addr="D0:03:4B:3D:18:91" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="Living-Room" type="PTR"/>
+</hostnames>
+<times srtt="84193" rttvar="84193" to="420965"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.145" addrtype="ipv4"/>
+<address addr="C4:2C:03:21:23:3C" addrtype="mac" vendor="Apple"/>
+<hostnames>
+</hostnames>
+<times srtt="2844" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.147" addrtype="ipv4"/>
+<address addr="18:65:90:93:29:C2" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="HaroldDlsiPhone" type="PTR"/>
+</hostnames>
+<times srtt="43850" rttvar="43850" to="219250"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.148" addrtype="ipv4"/>
+<address addr="D0:4F:7E:38:92:A6" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="Harolds-iPad" type="PTR"/>
+</hostnames>
+<times srtt="48154" rttvar="48154" to="240770"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.152" addrtype="ipv4"/>
+<address addr="E8:AB:FA:1D:C9:6B" addrtype="mac" vendor="Shenzhen Reecam Tech.Ltd."/>
+<hostnames>
+</hostnames>
+<times srtt="89044" rttvar="89044" to="445220"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.153" addrtype="ipv4"/>
+<address addr="E8:AB:FA:1D:C6:48" addrtype="mac" vendor="Shenzhen Reecam Tech.Ltd."/>
+<hostnames>
+</hostnames>
+<times srtt="147282" rttvar="147282" to="736410"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.2.109" addrtype="ipv4"/>
+<hostnames>
+<hostname name="Harolds-MBP" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1513981772" timestr="Fri Dec 22 16:29:32 2017" elapsed="10.62" summary="Nmap done at Fri Dec 22 16:29:32 2017; 256 IP addresses (19 hosts up) scanned in 10.62 seconds" exit="success"/><hosts up="19" down="237" total="256"/>
+</runstats>
+</nmaprun>

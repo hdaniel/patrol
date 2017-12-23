@@ -1,0 +1,4 @@
+New device detected for <%= @site_name %>:
+<% @devices.each do |device| %>
+  <%= "#{device.mac_address} #{device.ip_address} #{device.vendor} #{device.hostname}" %>
+<% end %>
