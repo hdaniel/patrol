@@ -7,3 +7,12 @@ Parses the XML output from [Nmap](https://nmap.org) and saves the entries to a l
 To install:
 
 * ...
+
+Setting up a Raspberry Pi:
+
+* [Headless Raspberry Pi Setup](https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0)
+
+* Enable VNC remote desktop if desired https://www.raspberrypi.org/documentation/remote-access/vnc/
+
+* 
+
