@@ -14,5 +14,21 @@ Setting up a Raspberry Pi:
 
 * Enable VNC remote desktop if desired https://www.raspberrypi.org/documentation/remote-access/vnc/
 
+* https://github.com/postmodern/chruby
+
+```
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+```
+
+* https://github.com/postmodern/ruby-install#readme
+
+* `gem install bundler`
+
+* `sudo apt-get install sqlite3`
+
 * 
+
+
+
 
