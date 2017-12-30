@@ -27,7 +27,22 @@ source /usr/local/share/chruby/auto.sh
 
 * `sudo apt-get install sqlite3`
 
-* 
+* `sudo apt-get install libsqlite3-dev`
+
+* `sudo apt-get install nmap`
+
+* `git clone https://github.com/hdaniel/patrol.git`
+
+* `cd patrol; bundle install`
+
+* `bundle exec rake db:migrate`
+
+* configure mail.  Edit `config/environments/development.rb` to add the correct SMTP settings.
+
+* edit `/patrol/config/secrets.yml` to add your email addresses and site name.
+
+
+
 
 
 
