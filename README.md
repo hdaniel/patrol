@@ -19,12 +19,15 @@ After chruby is installed, add these lines to your ~/.bashrc:
 ```
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+chruby 2.4.0
 ```
 
 * You can use ruby-install to install the version of Ruby that you need.  Version 2.4.0 may be required to get past an openssl version issue.  See: https://github.com/postmodern/ruby-install#readme
 
-`ruby-install ruby 2.4.0`
-`chruby 2.4.0`
+```
+ruby-install ruby 2.4.0
+chruby 2.4.0
+```
 
 * Install bundler
 
@@ -32,8 +35,10 @@ source /usr/local/share/chruby/auto.sh
 
 * Install sqlite3
 
-`sudo apt-get install sqlite3`
-`sudo apt-get install libsqlite3-dev`
+```
+sudo apt-get install sqlite3
+sudo apt-get install libsqlite3-dev
+```
 
 * Install nmap
 
@@ -41,9 +46,11 @@ source /usr/local/share/chruby/auto.sh
 
 * Clone the patrol repo and initialize it
 
-`git clone https://github.com/hdaniel/patrol.git`
-`cd patrol; bundle install`
-`bundle exec rake db:migrate`
+```
+git clone https://github.com/hdaniel/patrol.git
+cd patrol; bundle install
+bundle exec rake db:migrate
+```
 
 * Configure your mail settings for notifications to go out.  Edit `config/environments/development.rb` to add the correct SMTP settings for your mail server.
 
