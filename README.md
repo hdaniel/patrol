@@ -23,6 +23,9 @@ source /usr/local/share/chruby/auto.sh
 
 * You can use ruby-install to install the version of Ruby that you need.  Version 2.4.0 may be required to get past an openssl version issue.  See: https://github.com/postmodern/ruby-install#readme
 
+`ruby-install ruby 2.4.0`
+`chruby 2.4.0`
+
 * Install bundler
 
 `gem install bundler`
