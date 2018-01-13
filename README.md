@@ -56,7 +56,21 @@ bundle exec rake db:migrate
 
 * Edit `/patrol/config/secrets.yml` to add your email addresses and site name.
 
+* Add the `nmap` command to root's crontab
 
+```
+sudo crontab -e
+# add this line correcting for your path and subnet:
+00,15,30,45 * * * * nmap -oX /home/pi/patrol/public/nmap_output.xml -sP 192.168.2.*
+```
+
+* Add the crontab entry to update the database and send alerts:
+
+```
+crontab -e
+# add this line correcting for your path
+05,20,35,50 * * * * $HOME/patrol/lib/bin/run_patrol.sh >/tmp/cron.log 2>&1
+```
 
 
 
