@@ -28,6 +28,8 @@
         <td><%=l device.last_seen_at.in_time_zone %></td>
         <td><%=l device.created_at.in_time_zone %></td>
         <td>
+          <%= link_to t('.logs', :default => t("helpers.links.logs")),
+                      device_logs_path(device), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.show', :default => t("helpers.links.show")),
                       device_path(device), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

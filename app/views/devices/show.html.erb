@@ -18,6 +18,8 @@
   <dd><%= @device.last_seen_at %></dd>
 </dl>
 
+<%= link_to t('.logs', :default => t("helpers.links.logs")),
+              device_logs_path(@device), :class => 'btn btn-default' %>
 <%= link_to t('.back', :default => t("helpers.links.back")),
               devices_path, :class => 'btn btn-default'  %>
 <%= link_to t('.edit', :default => t("helpers.links.edit")),

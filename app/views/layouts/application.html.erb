@@ -9,6 +9,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= nav_bar static: :top, inverse: true, brand: "Patrol", responsive: true do %>
+      <%= menu_group do %>
+        <%= menu_item "Devices", devices_path %>
+        <%= menu_item "Logs", logs_path %>
+      <% end %>
+    <% end %>
+
+    <div class="page_content">
+      <%= yield %>
+    </div>
   </body>
 </html>

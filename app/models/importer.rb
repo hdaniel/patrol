@@ -5,6 +5,7 @@ class Importer
 
   def call
     import_and_notify
+    Log.purge_old_records
   end
 
   def import_and_notify
@@ -15,7 +16,8 @@ class Importer
   def import_from_nmap!
     nmap_data["nmaprun"]["host"].each do |host|
       device = process_host(host)
-      update_or_create(device)
+      device = update_or_create(device)
+      log_entry(device)
     end
   end
 
@@ -66,12 +68,17 @@ class Importer
       hostname: processed_device.hostname,
       last_seen_at: Time.now
     )
+    return device
   end
 
   def notify!
     devices = Device.where("created_at > ?", Time.now - 5.minutes)
     return if devices.blank?
     NotificationMailer.notification_email(devices).deliver_now
+  end
+
+  def log_entry(device)
+    Log.create(device: device)
   end
 
 end
