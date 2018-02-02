@@ -32,11 +32,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'mail.blisspath.net',
+    address:              'mail.server.net',
     port:                 25,
-    domain:               'blisspath.net',
-    user_name:            'security@blisspath.net',
-    password:             'bobbyman',
+    domain:               'server.net',
+    user_name:            'security@server.net',
+    password:             'mysecret',
     authentication:       'plain',
     :enable_starttls_auto => true,
     :openssl_verify_mode  => 'none' }
