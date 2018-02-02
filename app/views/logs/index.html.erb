@@ -1,0 +1,28 @@
+<%- model_class = Log -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:device_id) %></th>
+      <th><%= Device.human_attribute_name(:vendor) %></th>
+      <th><%= Device.human_attribute_name(:hostname) %></th>
+      <th><%= Device.human_attribute_name(:notes) %></th>
+      <th><%= "Logged at" %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @logs.each do |log| %>
+      <tr>
+        <td><%= log.id %></td>
+        <td><%= link_to log.device_id, device_path(log.device) %></td>
+        <td><%= log.device.vendor %></td>
+        <td><%= log.device.hostname %></td>
+        <td><%= log.device.notes %></td>
+        <td><%=l log.created_at.in_time_zone %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
