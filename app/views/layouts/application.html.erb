@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <%= nav_bar static: :top, inverse: true, brand: "Patrol", responsive: true do %>
+    <%= nav_bar static: :top, inverse: true, brand: "Patrol - #{Rails.application.secrets.SITE_NAME}", responsive: true do %>
       <%= menu_group do %>
         <%= menu_item "Devices", devices_path %>
         <%= menu_item "Logs", logs_path %>
