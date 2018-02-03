@@ -78,7 +78,7 @@ class Importer
 
   def devices_to_notify
     Device.where("created_at > ?", Time.now - 5.minutes) +
-      Device.where("updated_at > ?", Time.now - 5.minutes).where(always_alert: true)
+      Device.where("last_seen_at > ?", Time.now - 5.minutes).where(always_alert: true)
   end
 
   def log_entry(device)
