@@ -13,6 +13,7 @@
       <th><%= model_class.human_attribute_name(:notes) %></th>
       <th><%= model_class.human_attribute_name(:last_seen_at) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= "Alert?" %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -27,6 +28,7 @@
         <td><%= device.notes %></td>
         <td><%=l device.last_seen_at.in_time_zone %></td>
         <td><%=l device.created_at.in_time_zone %></td>
+        <td><%= device.always_alert %></td>
         <td>
           <%= link_to t('.logs', :default => t("helpers.links.logs")),
                       device_logs_path(device), :class => 'btn btn-default btn-xs' %>

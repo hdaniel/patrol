@@ -16,6 +16,8 @@
   <dd><%= @device.notes %></dd>
   <dt><strong><%= model_class.human_attribute_name(:last_seen_at) %>:</strong></dt>
   <dd><%= @device.last_seen_at %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:always_alert) %>:</strong></dt>
+  <dd><%= @device.always_alert %></dd>
 </dl>
 
 <%= link_to t('.logs', :default => t("helpers.links.logs")),

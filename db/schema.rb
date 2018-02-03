@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180202004203) do
+ActiveRecord::Schema.define(version: 20180203140040) do
 
   create_table "devices", force: :cascade do |t|
     t.string "mac_address"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20180202004203) do
     t.datetime "last_seen_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "always_alert"
   end
 
   create_table "logs", force: :cascade do |t|

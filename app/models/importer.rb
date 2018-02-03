@@ -72,9 +72,13 @@ class Importer
   end
 
   def notify!
-    devices = Device.where("created_at > ?", Time.now - 5.minutes)
-    return if devices.blank?
-    NotificationMailer.notification_email(devices).deliver_now
+    return if devices_to_notify.blank?
+    NotificationMailer.notification_email(devices_to_notify).deliver_now
+  end
+
+  def devices_to_notify
+    Device.where("created_at > ?", Time.now - 5.minutes) +
+      Device.where("updated_at > ?", Time.now - 5.minutes).where(always_alert: true)
   end
 
   def log_entry(device)

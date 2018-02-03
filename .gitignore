@@ -24,3 +24,4 @@
 
 /config/environments/development.rb
 /config/secrets.yml
+/public/nmap_output.xml
