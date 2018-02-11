@@ -8,7 +8,7 @@ class LogsController < ApplicationController
       @device = Device.find(params[:device_id])
       @logs = @device.logs
     else
-      @logs = Log.all
+      @logs = Log.all.includes(:device)
     end
   end
 
